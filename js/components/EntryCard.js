@@ -41,7 +41,7 @@ function EntryCard({ entry: e, onToggleFav, onEdit, onRemove }) {
         fontSize: 13, color: C.muted, margin: "10px 0 0",
       }}>
         {e.dose && <span>豆 <b style={{ color: C.text }}>{e.dose}g</b></span>}
-        {e.water && <span>湯 <b style={{ color: C.text }}>{e.water}ml</b></span>}
+        {e.water && <span>湯 <b style={{ color: C.text }}>{e.water}g</b></span>}
         {ratio(e.dose, e.water) && <span>比率 <b style={{ color: C.accent }}>{ratio(e.dose, e.water)}</b></span>}
         {e.time > 0 && <span>抽出 <b style={{ color: C.text }}>{fmtTime(e.time)}</b></span>}
         {e.mill && (

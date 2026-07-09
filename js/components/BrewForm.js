@@ -55,7 +55,7 @@ function BrewForm({
             onChange={(ev) => setForm({ ...form, dose: ev.target.value })} />
         </div>
         <div>
-          <span style={label}>湯量 (ml)</span>
+          <span style={label}>湯量 (g)</span>
           <input style={input} inputMode="decimal" value={form.water} placeholder="225"
             onChange={(ev) => setForm({ ...form, water: ev.target.value })} />
         </div>
