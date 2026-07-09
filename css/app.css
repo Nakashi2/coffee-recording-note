@@ -1,0 +1,2 @@
+html, body { margin: 0; background: #F6F1E7; }
+#root { padding-top: env(safe-area-inset-top); }
