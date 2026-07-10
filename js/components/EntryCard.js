@@ -43,6 +43,7 @@ function EntryCard({ entry: e, onToggleFav, onEdit, onRemove }) {
         {e.dose && <span>豆 <b style={{ color: C.text }}>{e.dose}g</b></span>}
         {e.water && <span>湯 <b style={{ color: C.text }}>{e.water}g</b></span>}
         {ratio(e.dose, e.water) && <span>比率 <b style={{ color: C.accent }}>{ratio(e.dose, e.water)}</b></span>}
+        {e.temp && <span>湯温 <b style={{ color: C.text }}>{e.temp}℃</b></span>}
         {e.time > 0 && <span>抽出 <b style={{ color: C.text }}>{fmtTime(e.time)}</b></span>}
         {e.mill && (
           <span>{e.mill}{e.clicks && <> <b style={{ color: C.text }}>{e.clicks}クリック</b></>}</span>

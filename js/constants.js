@@ -18,6 +18,7 @@ const EMPTY = {
   bean: "",
   dose: "",
   water: "",
+  temp: "",
   mill: "",
   millCustom: "",
   clicks: "",

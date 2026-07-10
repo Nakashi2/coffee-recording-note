@@ -48,7 +48,7 @@ function BrewForm({
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
         <div>
           <span style={label}>豆の量 (g)</span>
           <input style={input} inputMode="decimal" value={form.dose} placeholder="15"
@@ -58,6 +58,11 @@ function BrewForm({
           <span style={label}>湯量 (g)</span>
           <input style={input} inputMode="decimal" value={form.water} placeholder="225"
             onChange={(ev) => setForm({ ...form, water: ev.target.value })} />
+        </div>
+        <div>
+          <span style={label}>湯温 (℃)</span>
+          <input style={input} inputMode="decimal" value={form.temp} placeholder="92"
+            onChange={(ev) => setForm({ ...form, temp: ev.target.value })} />
         </div>
       </div>
 

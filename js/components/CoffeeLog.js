@@ -162,6 +162,7 @@ function CoffeeLog() {
       bean: e.bean,
       dose: e.dose || "",
       water: e.water || "",
+      temp: e.temp || "",
       mill: !e.mill ? "" : mills.includes(e.mill) ? e.mill : "その他",
       millCustom: e.mill && !mills.includes(e.mill) && e.mill !== "その他" ? e.mill : "",
       clicks: e.clicks || "",
